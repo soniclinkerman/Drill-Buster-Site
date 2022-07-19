@@ -4,7 +4,10 @@ import Card from "../components/Card";
 import Header from "../components/Header";
 import Spikes from "../components/Spikes";
 import Footer from "../components/Footer";
-
+import Form from "../components/Form";
+import CustomForm from "../components/CustomForm";
+import ImageSection from "../components/Image";
+import groundImage from "../public/assets/AdventureKitty_Logo.png";
 export default function Home() {
   return (
     <div className="homepage">
@@ -20,57 +23,58 @@ export default function Home() {
       <Section id="about" bgImage={"/assets/blue-skies-bg.png"} spikes="light">
         <h2 className="title">About title</h2>
         <div className="card-wrapper">
-          <Card title={"A"} text="Hello"></Card>
+          <Card
+            title={"TEST YOUR RISK/REWARD SKILLS"}
+            text="Collect coins to break barriers which allow you to progress in your journey. Will you take the safe route and get the bare minimum, or the risky route with a higher reward, but chance of losing it all?"
+          />
 
-          <div className="card">
-            <div className="card__image">Card image</div>
-            <div className="card__content">
-              <h3 className="card__title">Card title</h3>
-              <p className="card__summary">Card summary</p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card__image">Card image</div>
-            <div className="card__content">
-              <h3 className="card__title">Card title</h3>
-              <p className="card__summary">Card summary</p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card__image">Card image</div>
-            <div className="card__content">
-              <h3 className="card__title">Card title</h3>
-              <p className="card__summary">Card summary</p>
-            </div>
-          </div>
+          <Card
+            title={"EXPLORE NEW TERRAINS"}
+            text="Uncover unique environments filled with secrets as you encounter mischievious enemies and challenging puzzles on your mission to collect the element found within each biome."
+          />
+
+          <Card
+            title={"ADAPT AND OVERCOME"}
+            text="Use quick decision making to adapt from your original plan when found in a sticky situation or see a golden oppurunity to get more than what you came for."
+          />
         </div>
-
         <Spikes light flip="v" />
       </Section>
 
       {/* Preview section */}
       <Section id="preview" bgImage={"/assets/cave-bg.png"}>
-        <h2 className="title">Preview title</h2>
+        <h2 className="title">More To Come</h2>
 
         <div className="card-wrapper">
-          <div className="preview-card">preview image</div>
-          <div className="preview-card preview-card--locked">
-            preview locked
-          </div>
-          <div className="preview-card preview-card--locked">
-            preview locked
-          </div>
+          <ImageSection
+            imageUrl={"/assets/cave-bg.png"}
+            text={"Ground Biome"}
+            isLocked={false}
+          />
+          <ImageSection
+            imageUrl={"/assets/cave-bg.png"}
+            icon={"/assets/lock-icon.png"}
+            isLocked
+          />
+
+          <ImageSection
+            imageUrl={"/assets/cave-bg.png"}
+            icon={"/assets/lock-icon.png"}
+            isLocked
+          />
         </div>
 
-        <form className="email-subscription">
+        <CustomForm />
+
+        {/* <form className="email-subscription">
           <label htmlFor="email">
             Subscribe to know when the next biome drops
           </label>
           <input type="email" name="email" id="email" placeholder="Email" />
           <button type="submit">Subscribe</button>
-        </form>
+        </form> */}
 
-        <Spikes />
+        <Spikes flip="z" />
       </Section>
 
       <Footer />

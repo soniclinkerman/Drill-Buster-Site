@@ -47,6 +47,10 @@ const GlobalStyle = createGlobalStyle`
    .homepage {
      overflow-x: hidden;
    }
+   .title {
+     text-align: center;
+     font-size: 5rem;
+   }
  `}
 `;
 

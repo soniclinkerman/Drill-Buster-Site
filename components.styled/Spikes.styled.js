@@ -32,6 +32,11 @@ const SpikesStyled = styled.div`
         transform: rotate(180deg);
         top: -6rem;
       }
+
+      &--z {
+        /* transform: rotate(180deg); */
+        top: -7rem;
+      }
     }
 
     ${mq.min.tablet} {

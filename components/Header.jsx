@@ -14,6 +14,7 @@ const HeaderBackground = styled.div`
   justify-content: space-between;
   flex-direction: column;
   background-position: center;
+  margin-bottom: 2.5em;
 `;
 
 const HeaderLogo = styled.img`
@@ -63,7 +64,7 @@ const Header = () => {
     <HeaderBackground>
       <HeaderLogo src="./assets/DrillBuster_Logo.png"></HeaderLogo>
       <HeaderVideo>
-        <Video url="/videos/drill_buster_trailer.mp4" />
+        <Video url="https://youtu.be/OHL52p5Y8fc" />
       </HeaderVideo>
       <HeaderCTAButton>Play Now</HeaderCTAButton>
     </HeaderBackground>
