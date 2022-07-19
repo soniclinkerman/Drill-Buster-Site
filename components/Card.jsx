@@ -1,37 +1,9 @@
 import react from "react";
-// import { HeaderLogo, HeaderVideo } from "../components.styled/Header.styled";
 import styled from "styled-components";
 import logoImg from "../public/assets/DrillBuster_Logo.png";
-
-// const CardImage = styled.img`
-//   max-width: 500px;
-//   width: 90%;
-//   margin: 1em auto;
-// `;
-
-// CardImage.defaultProps = {
-//   src: logoImg,
-// };
-
-// const CardWrapper = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: column;
-// `;
-
-// const CardTitle = styled.h3`
-//   font-size: 3rem;
-//   text-align: center;
-// `;
-
-// const CardSummary = styled.p`
-//   font-size: 2rem;
-//   text-align: left;
-// `;
 const CardImage = styled.img`
-  max-width: 500px;
-  width: 90%;
-  margin: 1em auto;
+  width: 100%;
+  margin-bottom: 2.5em;
 `;
 
 CardImage.defaultProps = {
@@ -39,19 +11,19 @@ CardImage.defaultProps = {
 };
 
 const CardWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  width: 95%;
+  margin: 3.5em auto;
 `;
 
 const CardTitle = styled.h3`
-  font-size: 3rem;
-  text-align: center;
+  font-size: 3.5rem;
+  text-align: left;
+  margin-bottom: 0.5em;
 `;
 
 const CardSummary = styled.p`
   font-size: 2rem;
-  text-align: left;
+  line-height: 2em;
 `;
 
 const Card = ({ title, text, image }) => {
@@ -59,7 +31,7 @@ const Card = ({ title, text, image }) => {
     <CardWrapper>
       <CardImage src="./assets/AdventureKitty_NoLogo.png"></CardImage>
       <CardTitle>{title}</CardTitle>
-      <p>{text}</p>
+      <CardSummary>{text}</CardSummary>
     </CardWrapper>
   );
 };
