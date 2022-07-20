@@ -25,6 +25,7 @@ const Footer = ({
             className="social"
             href="https://twitter.com/ZaltickGames"
             target="_blank"
+            rel="noreferrer"
           >
             <Image
               src="/assets/twitter.svg"
