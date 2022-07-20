@@ -23,7 +23,7 @@ const ImageCard = styled.div`
 const ImageCardText = styled.div`
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 2.5rem;
+  font-size: 3rem;
 `;
 
 const ImageCardIcon = styled.img`
