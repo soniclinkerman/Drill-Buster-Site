@@ -31,6 +31,8 @@ const HeaderVideo = styled.div`
   /* border: 2px solid black; */
   margin: auto;
   padding: 2em;
+  height: 284px;
+  width: 400px;
   margin-bottom: 2em;
   /* background-color: red; */
   color: white;
