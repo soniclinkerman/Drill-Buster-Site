@@ -21,7 +21,12 @@ export default function Home() {
 
       {/* About section */}
       <Section id="about" bgImage={"/assets/blue-skies-bg.png"} spikes="light">
-        <h2 className="title">About title</h2>
+        <div className="about-wrapper">
+          <div className="about-line"></div>
+          <h2 className="title">Go For Gold</h2>
+          <div className="about-line"></div>
+        </div>
+
         <div className="card-wrapper">
           <Card
             title={"TEST YOUR RISK/REWARD SKILLS"}

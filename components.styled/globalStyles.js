@@ -49,7 +49,15 @@ const GlobalStyle = createGlobalStyle`
    }
    .title {
      text-align: center;
-     font-size: 5rem;
+     font-size: 10rem;
+     text-transform: uppercase;
+   }
+   .about-line {
+     border-top: 10px solid white;
+   }
+   .about-wrapper {
+     /* width: 80%; */
+     /* margin: auto; */
    }
  `}
 `;
