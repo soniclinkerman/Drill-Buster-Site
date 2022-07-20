@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
    }
    .title {
      text-align: center;
-     font-size: 10rem;
+     font-size: 5rem;
      text-transform: uppercase;
    }
    .about-line {

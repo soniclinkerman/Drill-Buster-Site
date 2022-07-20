@@ -7,7 +7,7 @@ import Video from "./Video";
 const HeaderBackground = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.216), rgba(0, 0, 0, 0.374)),
     url("./assets/AdventureKitty_NoLogo.png");
-  background-color: red;
+  /* background-color: red; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -30,8 +30,7 @@ HeaderLogo.defaultProps = {
 const HeaderVideo = styled.div`
   /* border: 2px solid black; */
   margin: auto;
-  padding: 2em;
-  height: 284px;
+  height: 222px;
   width: 400px;
   margin-bottom: 2em;
   /* background-color: red; */
