@@ -30,16 +30,19 @@ export default function Home() {
         <div className="card-wrapper">
           <Card
             title={"TEST YOUR RISK/REWARD SKILLS"}
+            image="/assets/screenshot-2.png"
             text="Collect coins to break barriers which allow you to progress in your journey. Will you take the safe route and get the bare minimum, or the risky route with a higher reward, but chance of losing it all?"
           />
 
           <Card
             title={"EXPLORE NEW TERRAINS"}
+            image="/assets/screenshot-3.png"
             text="Uncover unique environments filled with secrets as you encounter mischievious enemies and challenging puzzles on your mission to collect the element found within each biome."
           />
 
           <Card
             title={"ADAPT AND OVERCOME"}
+            image="/assets/screenshot-1.png"
             text="Use quick decision making to adapt from your original plan when found in a sticky situation or see a golden oppurunity to get more than what you came for."
           />
         </div>
@@ -57,7 +60,7 @@ export default function Home() {
             isLocked={false}
           />
           <ImageSection
-            imageUrl={"/assets/cave-bg.png"}
+            // imageUrl={"/assets/x-background.png"}
             icon={"/assets/lock-icon.png"}
             isLocked
           />
