@@ -28,12 +28,16 @@ HeaderLogo.defaultProps = {
 };
 
 const HeaderVideo = styled.div`
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin: auto;
-  padding: 2em 6em;
+  padding: 2em;
   margin-bottom: 2em;
-  background-color: red;
+  /* background-color: red; */
   color: white;
+  /* height: 500px; */
+  /* border-top: 5px solid white; */
+  /* width: 100%; */
+  /* max-height: 400px; */
 `;
 
 const Button = styled.button`
