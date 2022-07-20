@@ -16,17 +16,21 @@ const Footer = ({
 
         <p className="footer__text">Wanna get in touch?</p>
 
-        <a className="footer__cta" href="mailto:email@gmail.com">
-          Contact
+        <a className="footer__cta" href="mailto:zaltickgames@gmail.com">
+          Contact Us
         </a>
 
         <div className="footer__socials">
-          <a className="social" href="">
+          <a
+            className="social"
+            href="https://twitter.com/ZaltickGames"
+            target="_blank"
+          >
             <Image
               src="/assets/twitter.svg"
               alt="twitter"
-              width={24}
-              height={24}
+              width={48}
+              height={48}
             />
           </a>
         </div>

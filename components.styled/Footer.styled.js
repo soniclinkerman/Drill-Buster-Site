@@ -38,10 +38,12 @@ const FooterStyled = styled.footer`
       padding: ${spacing.sm};
       margin: auto;
       margin-bottom: ${spacing.sm};
+      margin-bottom: 1.5em;
     }
 
     .footer__text {
       text-transform: capitalize;
+      font-size: 2.5rem;
     }
 
     .footer__cta {
@@ -54,6 +56,9 @@ const FooterStyled = styled.footer`
       padding: ${spacing.xs} ${spacing.sm};
       font-weight: bold;
       text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 2em;
+      font-weight: bold;
     }
   `}
 `;
