@@ -29,7 +29,7 @@ const CardSummary = styled.p`
 const Card = ({ title, text, image }) => {
   return (
     <CardWrapper>
-      <CardImage src="./assets/AdventureKitty_NoLogo.png"></CardImage>
+      <CardImage src={image}></CardImage>
       <CardTitle>{title}</CardTitle>
       <CardSummary>{text}</CardSummary>
     </CardWrapper>
