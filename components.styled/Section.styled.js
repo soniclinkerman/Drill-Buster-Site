@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 const SectionStyled = styled.section`
   ${({ theme: { colors }, bgImage }) => css`
     min-height: 100vh;
+
     background-color: ${colors.black};
     background-image: url(${bgImage});
     background-repeat: no-repeat;
@@ -18,7 +19,7 @@ const SectionStyled = styled.section`
       height: 100%;
       top: 0;
       background: ${colors.black};
-      opacity: 0.5;
+      opacity: 0.7;
       z-index: -1;
     }
   `}
