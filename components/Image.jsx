@@ -15,7 +15,7 @@ const ImageCard = styled.div`
   border: 2px solid white;
   border-radius: 0.5em;
   padding: 4em;
-  margin: 2em 1em;
+  margin: 1em 1em;
   background-size: cover;
   text-align: center;
 `;
@@ -27,7 +27,7 @@ const ImageCardText = styled.div`
 `;
 
 const ImageCardIcon = styled.img`
-  width: 25%;
+  width: 10%;
 `;
 
 ImageCard.defaultProps = {
