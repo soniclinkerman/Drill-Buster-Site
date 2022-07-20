@@ -18,8 +18,9 @@ const HeaderBackground = styled.div`
 `;
 
 const HeaderLogo = styled.img`
-  max-width: 100px;
+  max-width: 500px;
   margin: 1em auto;
+  width: 40%;
 `;
 
 HeaderLogo.defaultProps = {
