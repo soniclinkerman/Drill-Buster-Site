@@ -38,6 +38,8 @@ export default function Home() {
             title={"EXPLORE NEW TERRAINS"}
             image="/assets/screenshot-3.png"
             text="Uncover unique environments filled with secrets as you encounter mischievious enemies and challenging puzzles on your mission to collect the element found within each biome."
+            isOnLeft={true}
+            className="card-reverse"
           />
 
           <Card
@@ -51,22 +53,24 @@ export default function Home() {
 
       {/* Preview section */}
       <Section id="preview" bgImage={"/assets/cave-bg.png"}>
-        <h2 className="title">More To Come</h2>
+        <h2 className="title title-small">More To Come...</h2>
 
-        <div className="card-wrapper">
+        <div className="card-wrapper image-container">
           <ImageSection
             imageUrl={"/assets/cave-bg.png"}
             text={"Ground Biome"}
             isLocked={false}
           />
           <ImageSection
-            // imageUrl={"/assets/x-background.png"}
+            // imageUrl={"/assets/cave-bg.png"}
+            // text={"Ground Biome"}
             icon={"/assets/lock-icon.png"}
             isLocked
           />
 
           <ImageSection
-            imageUrl={"/assets/cave-bg.png"}
+            // imageUrl={"/assets/cave-bg.png"}
+            // text={"Ground Biome"}
             icon={"/assets/lock-icon.png"}
             isLocked
           />
