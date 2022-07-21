@@ -21,6 +21,10 @@ const HeaderLogo = styled.img`
   max-width: 500px;
   margin: 1em auto;
   width: 40%;
+
+  @media (min-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 HeaderLogo.defaultProps = {
@@ -33,12 +37,7 @@ const HeaderVideo = styled.div`
   height: 222px;
   width: 400px;
   margin-bottom: 2em;
-  /* background-color: red; */
   color: white;
-  /* height: 500px; */
-  /* border-top: 5px solid white; */
-  /* width: 100%; */
-  /* max-height: 400px; */
 `;
 
 const Button = styled.button`
@@ -65,14 +64,18 @@ const HeaderCTAButton = styled(Button)`
   margin-bottom: 2em;
 `;
 
+const HeaderContainer = styled.div``;
+
 const Header = () => {
   return (
     <HeaderBackground>
       <HeaderLogo src="./assets/DrillBuster_Logo.png"></HeaderLogo>
-      <HeaderVideo>
-        <Video url="https://youtu.be/OHL52p5Y8fc" />
-      </HeaderVideo>
-      <HeaderCTAButton>Play Now</HeaderCTAButton>
+      <HeaderContainer>
+        <HeaderVideo>
+          <Video url="https://youtu.be/OHL52p5Y8fc" />
+        </HeaderVideo>
+        <HeaderCTAButton>Play Now</HeaderCTAButton>
+      </HeaderContainer>
     </HeaderBackground>
   );
 };

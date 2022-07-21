@@ -15,19 +15,31 @@ const ImageCard = styled.div`
   border: 2px solid white;
   border-radius: 0.5em;
   padding: 4em;
-  margin: 1em 1em;
+  margin: 2em 0;
   background-size: cover;
   text-align: center;
+  @media (min-width: 1000px) {
+    height: 500px;
+    margin: 2em;
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const ImageCardText = styled.div`
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin: auto;
 `;
 
 const ImageCardIcon = styled.img`
   width: 10%;
+  @media (min-width: 1000px) {
+    width: 50%;
+    margin: auto;
+  }
 `;
 
 ImageCard.defaultProps = {
@@ -36,18 +48,16 @@ ImageCard.defaultProps = {
 
 const ImageSection = ({ imageUrl, text, icon, isLocked }) => {
   return (
-    <div>
-      <ImageCard
-        img={`${imageUrl}`}
-        gradientAmount={isLocked ? LOCKED_COLOR : UNLCOKED_COLOR}
-      >
-        {isLocked ? (
-          <ImageCardIcon src={icon} />
-        ) : (
-          <ImageCardText>{text} </ImageCardText>
-        )}
-      </ImageCard>
-    </div>
+    <ImageCard
+      img={`${imageUrl}`}
+      gradientAmount={isLocked ? LOCKED_COLOR : UNLCOKED_COLOR}
+    >
+      {isLocked ? (
+        <ImageCardIcon src={icon} />
+      ) : (
+        <ImageCardText>{text} </ImageCardText>
+      )}
+    </ImageCard>
   );
 };
 
