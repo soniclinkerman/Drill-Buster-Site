@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header text="Coming Soon" />
 
       {/* About section */}
       <Section id="about" bgImage={"/assets/blue-skies-bg.png"} spikes="light">
