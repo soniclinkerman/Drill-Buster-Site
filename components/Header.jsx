@@ -22,8 +22,9 @@ const HeaderLogo = styled.img`
   margin: 1em auto;
   width: 40%;
 
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     flex-direction: column;
+    width: 20%;
   }
 `;
 
@@ -38,6 +39,11 @@ const HeaderVideo = styled.div`
   width: 400px;
   margin-bottom: 2em;
   color: white;
+
+  @media (min-width: 1000px) {
+    height: 444px;
+    width: 800px;
+  }
 `;
 
 const Button = styled.button`
@@ -62,11 +68,26 @@ const HeaderCTAButton = styled(Button)`
   border-radius: 0;
   padding: 0.5em 2.5em;
   margin-bottom: 2em;
+  //DELETE ON LAUNCH
+  pointer-events: none;
+  //DELETE ON LAUNCH
+
+  @media (min-width: 1000px) {
+    padding: 0.75em 6em;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 `;
 
-const HeaderContainer = styled.div``;
+const HeaderContainer = styled.div`
+  /* &:hover ${HeaderCTAButton} {
+    background-color: #ffffff;
+    border: 2px solid #fe942f;
+    color: #fe942f;
+  } */
+`;
 
-const Header = () => {
+const Header = ({ text }) => {
   return (
     <HeaderBackground>
       <HeaderLogo src="./assets/DrillBuster_Logo.png"></HeaderLogo>
@@ -74,7 +95,7 @@ const Header = () => {
         <HeaderVideo>
           <Video url="https://youtu.be/OHL52p5Y8fc" />
         </HeaderVideo>
-        <HeaderCTAButton>Play Now</HeaderCTAButton>
+        <HeaderCTAButton>{text}</HeaderCTAButton>
       </HeaderContainer>
     </HeaderBackground>
   );
