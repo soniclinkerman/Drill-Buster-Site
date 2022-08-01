@@ -31,7 +31,9 @@ const CustomForm = ({ status, message, onValidated }) => {
   `;
 
   const FormContainer = styled.div`
-    width: 100%;
+    /* width: 100%; */
+    width: 50%;
+    margin: auto;
   `;
 
   return (
