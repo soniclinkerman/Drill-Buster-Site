@@ -34,6 +34,20 @@ const Footer = ({
               height={48}
             />
           </a>
+
+          <a
+            className="social"
+            href="https://www.tiktok.com/@zaltickgames"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/assets/tiktok.svg"
+              alt="tiktok"
+              width={48}
+              height={48}
+            />
+          </a>
         </div>
       </div>
 

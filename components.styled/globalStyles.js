@@ -82,6 +82,10 @@ const GlobalStyle = createGlobalStyle`
    .card-reverse {
      flex-direction: row-reverse;
    }
+
+   .social {
+     margin: 0 1.5em;
+   }
  `}
 `;
 
