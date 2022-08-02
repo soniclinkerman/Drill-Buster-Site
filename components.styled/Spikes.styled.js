@@ -35,7 +35,7 @@ const SpikesStyled = styled.div`
 
       &--z {
         /* transform: rotate(180deg); */
-        top: -18rem;
+        top: -14rem;
       }
     }
 

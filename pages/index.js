@@ -8,6 +8,7 @@ import Form from "../components/Form";
 import CustomForm from "../components/CustomForm";
 import ImageSection from "../components/Image";
 import groundImage from "../public/assets/AdventureKitty_Logo.png";
+import NewsLetterSignUpForm from "../components/NewsletterSignupForm";
 export default function Home() {
   return (
     <div className="homepage">
@@ -76,7 +77,9 @@ export default function Home() {
           />
         </div>
 
-        <CustomForm />
+        <NewsLetterSignUpForm />
+
+        {/* <CustomForm /> */}
 
         {/* <form className="email-subscription">
           <label htmlFor="email">
