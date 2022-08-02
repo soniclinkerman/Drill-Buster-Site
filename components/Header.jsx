@@ -93,7 +93,7 @@ const Header = ({ text }) => {
       <HeaderLogo src="./assets/DrillBuster_Logo.png"></HeaderLogo>
       <HeaderContainer>
         <HeaderVideo>
-          <Video url="https://youtu.be/NFqo3aRGAQk" />
+          <Video url="https://youtu.be/mhCiiMzB9q4" />
         </HeaderVideo>
         <HeaderCTAButton>{text}</HeaderCTAButton>
       </HeaderContainer>
