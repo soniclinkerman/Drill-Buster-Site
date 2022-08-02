@@ -37,9 +37,9 @@ export default function NewsLetterSignUpForm() {
 
   const FormInput = styled.input`
     width: 70%;
-    padding: 0.75em 2em;
-    padding-left: 1em;
+
     margin-bottom: 1.5em;
+    padding: 0.5em 2.5em;
   `;
 
   const FormContainer = styled.div`
@@ -100,7 +100,7 @@ export default function NewsLetterSignUpForm() {
     // <form onSubmit={subscribeUser}>
     <FormStyle>
       <FormTitle>
-        Wanna know when the next Biome Drops?
+        Wanna know when the next Biome Drops? Subscribe to our newsletter!
         {/* <FormLink href="http://eepurl.com/h60L1n" target="_blank">
           {" Subscribe to our newsletter by clicking here!"}
         </FormLink> */}
@@ -108,7 +108,7 @@ export default function NewsLetterSignUpForm() {
 
       <FormContainer>
         <FormLink href="http://eepurl.com/h60L1n" target="_blank">
-          Click Here to Subscribe
+          Subscribe
         </FormLink>
         {/* <FormAbout>
           {`We hate constant emails which is why we only plan on contacting you no more than 1-2 times every other week.`}
