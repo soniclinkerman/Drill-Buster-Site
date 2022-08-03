@@ -1,7 +1,9 @@
 import react from "react";
 import styled from "styled-components";
 import logoImg from "../public/assets/DrillBuster_Logo.png";
-const CardImage = styled.img`
+import Image from "next/image";
+
+const CardImage = styled.div`
   width: 100%;
   margin-bottom: 2.5em;
   border: 5px solid white;
@@ -13,6 +15,19 @@ const CardImage = styled.img`
     height: 100%;
   }
 `;
+
+// const CardImage = styled.img`
+//   width: 100%;
+//   margin-bottom: 2.5em;
+//   border: 5px solid white;
+
+//   @media (min-width: 1000px) {
+//     max-width: 750px;
+//     margin-bottom: 2em;
+//     width: 40%;
+//     height: 100%;
+//   }
+// `;
 
 CardImage.defaultProps = {
   src: logoImg,
@@ -60,7 +75,9 @@ const CardTextContainer = styled.div`
 const Card = ({ title, text, image, isOnLeft, className }) => {
   return (
     <CardWrapper className={`${isOnLeft && className}`}>
-      <CardImage src={image}></CardImage>
+      <CardImage>
+        <Image src={image} layout="intrinsic" />
+      </CardImage>
       <CardTextContainer>
         <CardTitle>{title}</CardTitle>
         <CardSummary>{text}</CardSummary>

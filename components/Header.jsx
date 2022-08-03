@@ -3,10 +3,12 @@ import react from "react";
 import styled from "styled-components";
 import logoImg from "../public/assets/DrillBuster_Logo.png";
 import Video from "./Video";
+import Image from "next/image";
+import TwitterBanner from "../public/assets/TwitterBanner.png";
 
 const HeaderBackground = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.216), rgba(0, 0, 0, 0.374)),
-    url("./assets/AdventureKitty_NoLogo.png");
+    url("./assets/TwitterBanner.png");
   /* background-color: red; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,8 +19,19 @@ const HeaderBackground = styled.div`
   margin-bottom: 2.5em;
 `;
 
-const HeaderLogo = styled.img`
-  max-width: 500px;
+// const HeaderLogo = styled.img`
+//   max-width: 500px;
+//   margin: 1em auto;
+//   width: 40%;
+
+//   @media (min-width: 1000px) {
+//     flex-direction: column;
+//     width: 20%;
+//   }
+// `;
+
+const HeaderLogo = styled.div`
+  width: 500px;
   margin: 1em auto;
   width: 40%;
 
@@ -90,7 +103,9 @@ const HeaderContainer = styled.div`
 const Header = ({ text }) => {
   return (
     <HeaderBackground>
-      <HeaderLogo src="./assets/DrillBuster_Logo.png"></HeaderLogo>
+      <HeaderLogo>
+        <Image src={logoImg} layout="intrinsic" />
+      </HeaderLogo>
       <HeaderContainer>
         <HeaderVideo>
           <Video url="https://youtu.be/mhCiiMzB9q4" />

@@ -9,6 +9,7 @@ import CustomForm from "../components/CustomForm";
 import ImageSection from "../components/Image";
 import groundImage from "../public/assets/AdventureKitty_Logo.png";
 import NewsLetterSignUpForm from "../components/NewsletterSignupForm";
+import CardLayout from "../components/CardLayout";
 export default function Home() {
   return (
     <div className="homepage">
@@ -28,7 +29,9 @@ export default function Home() {
           <div className="about-line"></div>
         </div>
 
-        <div className="card-wrapper">
+        <CardLayout />
+
+        {/* <div className="card-wrapper">
           <Card
             title={"TEST YOUR RISK/REWARD SKILLS"}
             image="/assets/screenshot-2.png"
@@ -48,7 +51,7 @@ export default function Home() {
             image="/assets/screenshot-1.png"
             text="Use quick decision making to adapt from your original plan when found in a sticky situation or see a golden oppurunity to get more than what you came for."
           />
-        </div>
+        </div> */}
         <Spikes light flip="v" />
       </Section>
 
