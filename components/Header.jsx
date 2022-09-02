@@ -108,9 +108,14 @@ const Header = ({ text }) => {
       </HeaderLogo>
       <HeaderContainer>
         <HeaderVideo>
-          <Video url="https://youtu.be/mhCiiMzB9q4" />
+          <Video url="https://youtu.be/bjIWGIxtiZg" />
         </HeaderVideo>
-        <HeaderCTAButton>{text}</HeaderCTAButton>
+        <a
+          href="https://zaltick.itch.io/adventure-kitty-drill-buster"
+          target={"_blank"}
+        >
+          <HeaderCTAButton>{text}</HeaderCTAButton>
+        </a>
       </HeaderContainer>
     </HeaderBackground>
   );
