@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header text="Download Now" />
+      <Header text="Play Now" />
 
       {/* About section */}
       <Section id="about" bgImage={"/assets/blue-skies-bg.png"} spikes="light">
