@@ -113,6 +113,7 @@ const Header = ({ text }) => {
         <a
           href="https://zaltick.itch.io/adventure-kitty-drill-buster"
           target={"_blank"}
+          rel="noreferrer"
         >
           <HeaderCTAButton>{text}</HeaderCTAButton>
         </a>
